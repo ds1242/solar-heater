@@ -5,28 +5,20 @@ import sun from '../../assets/sun.png';
 import solarPanel from '../../assets/solar_panel.png';
 import storageTank from '../../assets/storage_tank.png';
 
+import systemInitial from '../../assets/initialSystemState.png';
+
 function System() {
+
+
+
     return (
         <Container>
             <Row>
+                
                 <Col>
-                    <img src={sun} />
+                    <img src={systemInitial} />
                 </Col>
-                <Col>
-                </Col>
-                <Col>
-                </Col>
-            </Row>
-            <Row>
-                <Col>
-                    <img src={solarPanel} />
-                </Col>
-                <Col>
-                    <img src={pump} />
-                </Col>
-                <Col>
-                    <img src={storageTank} />
-                </Col>
+                
             </Row>
         </Container>
     )
