@@ -25,9 +25,9 @@
   * [Questions](#questions)
   
   ## Installation
-  To install required node module packages, run npm install from the directory of this project. 
+  To install required node module packages, run `npm install` from the directory of this project. 
 
-  To run this locally npm start will kick off the React scripts and load it on a localhost.
+  To run this locally `npm start` will kick off the React scripts and load it on a localhost.
 
   ## Usage
 
