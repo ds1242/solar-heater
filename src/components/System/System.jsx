@@ -14,22 +14,24 @@ import tankHeat3 from '../../assets/tankHeating3.png';
 import systemFinalState from '../../assets/systemFinalState.png';
 
 function System() {
-    let imageState = {
-        systemHeat:[systemInitial, systemHeat1, systemHeat2, tankHeat1, tankHeat2, tankHeat3, systemFinalState],
-        activeIndex: 0
-    };
+    let systemHeat = [systemInitial, systemHeat1, systemHeat2, tankHeat1, tankHeat2, tankHeat3, systemFinalState]
     
-    const [imageSource, setImageSource] = useState(imageState.systemHeat[imageState.activeIndex])
+    let interval = null;
+    
+    const [imageSource, setImageSource] = useState(systemHeat[0])
     // console.log(imageState.activeIndex)
     const changePicture = (event) => {
         event.preventDefault();
         let newIndex = 0
 
-        setInterval(() => {
-            setImageSource(imageState.systemHeat[newIndex])
+        interval = setInterval(() => {
+            setImageSource(systemHeat[newIndex])
             console.log(newIndex)
 
             newIndex = newIndex  + 1
+            if(newIndex === 7) {
+                clearInterval(interval);
+            }
         }, 1000)
         // setImageSource(sun);
     }
