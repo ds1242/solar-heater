@@ -2,19 +2,11 @@ nav {
     background-color: var(--quartiary_color);
 }
 
-nav a {
-    color:var(--secondary_color);
-}
-
-nav a:hover {
-    color:var(--primary_color)
-}
-
-h3 a {
+h1 {
     color:var(--secondary_color);
     text-decoration:none;
 }
-h3 a:hover {
+h1:hover {
     color:var(--primary_color);
     text-decoration:none;
 }

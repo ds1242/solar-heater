@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
-import Nav from './components/Nav'
-import System from './components/System';
+import Nav from '../Nav'
+import System from '../System';
 
 
 function App() {

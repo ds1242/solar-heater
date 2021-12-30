@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`System component matches snapshot DOM node structure 1`] = `
+<DocumentFragment>
+  <div
+    class="container"
+  >
+    <div
+      class="justify-content-center row"
+    >
+      <button
+        class="btn btn-primary"
+        id="startButton"
+        type="button"
+      >
+        Click Here For A High Level Explanation
+      </button>
+    </div>
+    <div
+      class="justify-content-center align-items-center row"
+    >
+      <div
+        class="col"
+        id="infoSection"
+      >
+        <h3
+          class="justify-content-center"
+        >
+          Sensor in the tank detects the temperature of the water has dropped
+        </h3>
+      </div>
+    </div>
+    <div
+      class="justify-content-center row"
+      id="imageRow"
+    >
+      <div
+        class="col"
+      >
+        <img
+          alt="images of system heating water and adding it to the tank"
+          src="initialSystemState.png"
+        />
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
