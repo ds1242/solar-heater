@@ -15,10 +15,22 @@ import systemFinalState from '../../assets/systemFinalState.png';
 
 function System() {
     let systemHeat = [systemInitial, systemHeat1, systemHeat2, tankHeat1, tankHeat2, tankHeat3, systemFinalState]
-    
+    let information = [
+        'Sensor in the tank detects the temperature of the water has dropped',
+        'Temperature change could be that new cold water is added after use or just after a certain amount of time', 
+        'Pump turns on to begin moving water through the system again', 
+        'Heat is collected from the solar panel and heats up the water',
+        'The warm water mixes with the tank and starts to raise the temp of the tank',
+        'Eventually the temperature rises to a specified level and sensor in the tank detects',
+        'This turns the pump off and the system stops heating water'
+    ]
+
+
     let interval = null;
     
     const [imageSource, setImageSource] = useState(systemHeat[0])
+    const [informationArr, setInformationArr] = useState(information[0])
+
     // console.log(imageState.activeIndex)
     const changePicture = (event) => {
         event.preventDefault();
@@ -26,22 +38,32 @@ function System() {
 
         interval = setInterval(() => {
             setImageSource(systemHeat[newIndex])
+            setInformationArr(information[newIndex])
             console.log(newIndex)
 
             newIndex = newIndex  + 1
             if(newIndex === 7) {
                 clearInterval(interval);
             }
-        }, 1000)
+        }, 1700)
         // setImageSource(sun);
     }
     
     return (
         <Container>
             <Row>
+                <Col>
+                </Col>
+                <Col>
+                    <h3>{informationArr}</h3>
+                </Col>
+                <Col>
+                </Col>
+            </Row>
+            <Row>
                 
                 <Col>
-                    <img src={ imageSource } />
+                    <img src={imageSource} alt='images of system heating water and adding it to the tank'/>
                 </Col>
                 
             </Row>
