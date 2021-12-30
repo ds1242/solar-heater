@@ -1,0 +1,27 @@
+img {
+    width: 60vw;
+    height: 65vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#startButton {
+    width: 25%;
+    padding: 10px;
+    margin: 10px;
+    background-color: var(--cinqieme_color);
+    border-color: var(--cinqieme_color);
+}
+#startButton:hover {
+    background-color: var(--tertiary_color);
+    border-color: var(--tertiary_color);
+}
+
+#imageRow {
+    padding: 10px
+}
+
+#infoSection {
+    padding: 30px;
+    text-align: center;
+}
