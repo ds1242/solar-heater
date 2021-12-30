@@ -12,6 +12,8 @@ import tankHeat1 from '../../assets/tankHeating1.png';
 import tankHeat2 from '../../assets/tankHeating2.png';
 import tankHeat3 from '../../assets/tankHeating3.png';
 import systemFinalState from '../../assets/systemFinalState.png';
+import './System.css';
+
 
 function System() {
     let systemHeat = [systemInitial, systemHeat1, systemHeat2, tankHeat1, tankHeat2, tankHeat3, systemFinalState]
@@ -51,25 +53,18 @@ function System() {
     
     return (
         <Container>
-            <Row>
-                <Col>
-                </Col>
-                <Col>
-                    <h3>{informationArr}</h3>
-                </Col>
-                <Col>
-                </Col>
+            <Row className='justify-content-center'>
+                <Button onClick={changePicture} id='startButton'>Click Here For A High Level Explanation</Button>                
             </Row>
-            <Row>
-                
+            <Row className='justify-content-center align-items-center'>               
+                <Col id='infoSection'>
+                    <h3 className='justify-content-center'>{informationArr}</h3>
+                </Col>               
+            </Row>
+            <Row id='imageRow' className='justify-content-center'>                
                 <Col>
                     <img src={imageSource} alt='images of system heating water and adding it to the tank'/>
-                </Col>
-                
-            </Row>
-            <Row>
-                <Button onClick={changePicture}>Click</Button>
-                
+                </Col>                
             </Row>
         </Container>
     )

@@ -1,0 +1,21 @@
+img {
+    width: 60vw;
+    height: 65vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#startButton {
+    width: 25%;
+    padding: 10px;
+    margin: 10px;
+}
+
+#imageRow {
+    padding: 10px
+}
+
+#infoSection {
+    padding: 30px;
+    text-align: center;
+}
