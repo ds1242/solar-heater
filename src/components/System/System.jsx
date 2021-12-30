@@ -23,11 +23,13 @@ function System() {
     // console.log(imageState.activeIndex)
     const changePicture = (event) => {
         event.preventDefault();
+        let newIndex = 0
 
         setInterval(() => {
-            let newIndex = imageState.activeIndex + 1
             setImageSource(imageState.systemHeat[newIndex])
             console.log(newIndex)
+
+            newIndex = newIndex  + 1
         }, 1000)
         // setImageSource(sun);
     }
