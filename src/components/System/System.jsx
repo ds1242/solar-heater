@@ -24,7 +24,7 @@ function System() {
         'Heat is collected from the solar panel and heats up the water',
         'The warm water mixes with the tank and starts to raise the temp of the tank',
         'Eventually the temperature rises to a specified level and sensor in the tank detects',
-        'This turns the pump off and the system stops heating water'
+        'This turns the pump off and the system stops heating water (click the botton again to start over)'
     ]
 
 
@@ -47,7 +47,7 @@ function System() {
             if(newIndex === 7) {
                 clearInterval(interval);
             }
-        }, 1700)
+        }, 1800)
         // setImageSource(sun);
     }
     

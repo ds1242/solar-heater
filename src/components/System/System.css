@@ -9,6 +9,12 @@ img {
     width: 25%;
     padding: 10px;
     margin: 10px;
+    background-color: var(--cinqieme_color);
+    border-color: var(--cinqieme_color);
+}
+#startButton:hover {
+    background-color: var(--tertiary_color);
+    border-color: var(--tertiary_color);
 }
 
 #imageRow {
